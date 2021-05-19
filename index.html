@@ -12,15 +12,23 @@
 </head>
 <body>
     <div id="layer"></div>
-    <img src="./1.jpg" id="fIMG">
+    <picture>
+        <source media="(max-width:767px)" srcset="./photos/3.jpg">
+        <source media="(min-width:1024px)" srcset="./photos/1.jpg">
+        <img src="./photos/3.jpg" style="width: 100%; height: 100%;">
+    </picture>
+
     <div id="text">
         <span>Save the planet.</span>
         <br>
         <span>Be the change you want to see.</span>
     </div>
+
     <a href="#section"><button id="firstB">START YOUR JOURNEY</button></a>
-    <a href=""><button id="secondB">ABOUT US</button></a>
+    <a href="#footer"><button id="secondB">ABOUT US</button></a>
+    
     <div id="section">
+        <div id="layerG"></div>
         <ol>
             <li><h2>1. Plant trees.</h2><p>Trees fight climate change, keep the air clean and help you breathe.</p></li>
             <li><h2>2. Recylce.</h2><p>Recylcing reduce carbon emissions and conserve natural resources.</p></li>
@@ -29,6 +37,14 @@
             <li><h2>5. Consume less.</h2><p>Make accent on quality not quantity, save the environment's resources.</p></li>
         </ol>
     </div>
-    <div id="sIMG"></div>
+
+    <div id="footer">
+        <span>Useful links</span>
+        <ul>
+            <li><a href="https://www.ompe.org/en/who-are-we/">OMPE</a></li>
+            <li><a href="https://partnership.who.int/iomc/about-us">IOMC</a></li>
+            <li><a href="https://www.nasa.gov/">NASA</a></li>
+        </ul>
+    </div>
 </body>
 </html>
